@@ -3,4 +3,8 @@
 <br>
 <%= "Opponent has #{@player_2_HP}HP!" %>
 <br>
-<input type="button" value="attack">
+<form action="/attack" method="get">
+  <input type="submit" value= "Attack!"
+    name="Attack!" id="attack_submit" />
+</form>
+<br>
