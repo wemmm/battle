@@ -8,6 +8,7 @@ describe Player do
     # name_double = double(:battle)
     # allow(name_double).to receive(:player_1_name).and_return("cat")
     # name1 = Player.new(name_double)
-    expect(dog.name).to eq "Dog"
+      expect(dog.name).to eq "Dog"
+    end
   end
 end
