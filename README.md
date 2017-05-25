@@ -1,10 +1,14 @@
 # Battle!
 
 ## How to use:
-Not sure yet.
+```
+ruby app.rb
+```
+Then visit http://localhost:4567!
 
 ## Collaborators:
 [Alex Satur](https://github.com/alexanders89)
+
 [Charlotte Fereday](https://github.com/charlottebrf)
 
 ## What it is:
