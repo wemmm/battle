@@ -10,6 +10,7 @@ feature "Deduct hitpoints" do
   scenario "User's hitpoints are deducted when attacked" do
     sign_in_and_play
     click_button('Attack!')
+    click_button('OK')
     expect(page).to have_content "Opponent has 40HP!"
   end
 end
