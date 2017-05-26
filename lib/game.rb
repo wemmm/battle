@@ -22,4 +22,8 @@ class Game
     end
   end
 
+  def opponent
+    @current_player == @player1 ? @player2 : @player1
+  end
+
 end
