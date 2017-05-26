@@ -1,5 +1,4 @@
 
-
 class Player
 
   attr_reader :name, :hitpoints
@@ -9,11 +8,8 @@ class Player
     @hitpoints = hitpoints.to_i
   end
 
-  def attack(target)
-    target.damage
-  end
-
   def damage
     @hitpoints -= 10
   end
+
 end
