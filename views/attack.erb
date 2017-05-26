@@ -1,5 +1,18 @@
+<% if @game.player1.hitpoints == 0 || @game.player2.hitpoints == 0 %>
+  <h1>GAME OVER!!!</h1>
+  <br>
+  <h2><%= "#{@game.player1.hitpoints == 0 ? @game.player2.name : @game.player1.name} WINS!" %>
+
+  <form method="get" action="/">
+    <button type="submit">NEW GAME</button>
+  </form>
+
+<% else %>
+
 <%= @game.opponent.name %> attacked <%= @game.current_player.name %>
 
 <form method="get" action="/play">
   <button type="submit">OK</button>
 </form>
+
+<% end %>
